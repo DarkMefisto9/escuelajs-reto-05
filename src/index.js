@@ -24,7 +24,7 @@ const getData = (api, page) => {
         let output = characters.map(character => {
           return `
         <article class="Card">
-          <img src="${character.image}" />
+          <img src="${character.image}" alt="${character.name}" />
           <h2>${character.id} - ${character.name}<span>${character.species}</span></h2>
         </article>
       `
